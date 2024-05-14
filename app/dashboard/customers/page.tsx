@@ -1,5 +1,13 @@
+import CustomersTable from '@/app/ui/customers/table';
+import { Metadata } from 'next';
+import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
+
 const page = () => {
-  return <div>Customer Page</div>;
+  return <CustomersTable />;
 };
 
 export default page;
